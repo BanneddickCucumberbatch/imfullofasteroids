@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/imfullofasteroids/static/css/main.2cab51c0.css",
-    "main.js": "/imfullofasteroids/static/js/main.6950158d.js",
+    "main.js": "/imfullofasteroids/static/js/main.cfedb4eb.js",
     "static/media/earth.png": "/imfullofasteroids/static/media/earth.2c55c643efcf43523420.png",
     "static/media/asteroid.png": "/imfullofasteroids/static/media/asteroid.7f7a2e84a59a0a0d59be.png",
     "static/media/orbit.svg": "/imfullofasteroids/static/media/orbit.dd96a9264a9b63db9ce6d158d035cc76.svg",
@@ -13,10 +13,10 @@
     "static/media/hazard.svg": "/imfullofasteroids/static/media/hazard.74fb2470359cbdd26306721e6b4f601f.svg",
     "static/media/arrow.svg": "/imfullofasteroids/static/media/arrow.9c1111d81cdea60d9da1.svg",
     "main.2cab51c0.css.map": "/imfullofasteroids/static/css/main.2cab51c0.css.map",
-    "main.6950158d.js.map": "/imfullofasteroids/static/js/main.6950158d.js.map"
+    "main.cfedb4eb.js.map": "/imfullofasteroids/static/js/main.cfedb4eb.js.map"
   },
   "entrypoints": [
     "static/css/main.2cab51c0.css",
-    "static/js/main.6950158d.js"
+    "static/js/main.cfedb4eb.js"
   ]
 }
