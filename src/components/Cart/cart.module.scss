@@ -1,0 +1,114 @@
+.basketContainer {
+    position: fixed;
+    width: 200px;
+    top: 10%;
+    right: 5%;
+    padding: 1rem 2rem;
+    border: 1px dashed white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    transition: all .2s ease-in;
+
+    @media (max-width: 1000px) {
+        display: none;
+    }
+}
+
+.basketMobileContainer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: .5em;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(155, 123, 211);
+
+    @media (min-width: 1000px) {
+        display: none;
+    }
+
+    @media (max-width: 516px) {
+        font-size: .8em;
+    }
+}
+
+.basketHeading {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    align-self: center;
+}
+
+.basketContent {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 5px;
+}
+
+.emptyBasketWarning {
+    text-align: center;
+}
+
+.basketItemText {
+    cursor: pointer;
+    text-decoration: underline dotted;
+    margin-left: 5px;
+
+    @media (max-width: 1000px) {
+        text-decoration: none;
+        
+    }
+}
+
+.backetItemDeleteIcon {
+    cursor: pointer;
+    margin-left: 1em;
+    transition: transform .3s ease-in;
+    transform-origin: 8px 8px;
+    width: .8rem;
+    height: .8rem;
+    transition: color 0.1s ease-in;
+
+    &:hover {
+        color: red;
+    }
+}
+
+.basketItemContainer {
+    line-height: 0.9;
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+    margin-bottom: .7rem;
+}
+
+.basketItemCountContainer {
+    margin-bottom: 1rem;
+    text-align: center;
+
+    @media (max-width: 1000px) {
+        margin-bottom: 0;
+    }
+}
+
+.orderButton {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cleanCart {
+    margin: 0.5em auto;
+    cursor: pointer;
+}

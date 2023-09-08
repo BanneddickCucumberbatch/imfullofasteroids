@@ -1,0 +1,70 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+
+}
+
+.listHeading {
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+    letter-spacing: 0.08rem;
+    text-align: center;
+
+    @media (max-width: 800px) {
+        font-size: 1.5rem;
+    }
+
+    @media (max-width: 516px) {
+        font-size: 1.3rem;
+    }
+
+}
+
+.listContainer {
+    margin: 0 auto;
+}
+
+.distanceToggler {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 1em;
+    letter-spacing: 0.05em;
+
+    @media (max-width: 800px) {
+        font-size: 1em;
+    }
+
+    @media (max-width: 516px) {
+        font-size: .8em;
+    }
+    
+}
+
+.inKilometers,
+.inLunar {
+    cursor: pointer;
+    
+
+    &.activeToggle {
+        font-weight: 600;
+    }
+
+    &.activeToggle:hover {
+        text-decoration: none;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+
+

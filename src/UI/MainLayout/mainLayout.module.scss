@@ -1,0 +1,57 @@
+.mainContainer {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.mainHeading {
+    font-size: 6rem;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    @media (max-width: 800px) {
+        font-size: 4.5rem;
+    }
+
+    @media (max-width: 516px) {
+        font-size: 4rem;
+    }
+
+    @media (max-width: 300px) {
+        font-size: 2rem;
+    }
+}
+
+.mainDesc {
+    text-align: center;
+    font-size: 1.7rem;
+
+    @media (max-width: 800px) {
+        font-size: 1.4rem;
+    }
+
+    @media (max-width: 516px) {
+        font-size: 1.1rem;
+    }
+
+    @media (max-width: 300px) {
+        font-size: .8rem;
+    }
+}
+
+.header {
+    margin-bottom: 3rem;
+    position: relative;
+
+    @media (max-width: 650px) {
+        margin-bottom: 2rem;
+    }
+}
+
+.footer {
+    text-align: center;
+    margin-top: 3rem;
+}

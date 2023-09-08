@@ -1,0 +1,240 @@
+.contentContainer {
+    display: flex;
+    column-gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    @media (max-width: 420px) {
+       column-gap: .7em;
+    }
+}
+
+.listItem {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px dashed rgba(255, 255, 255, 0.3);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.1s ease-in;
+
+    @media (min-width: 1000px) {
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    }
+    
+    @media (max-width: 800px) {
+        width: 400px;
+        font-size: 0.8em;
+    }
+
+    @media (max-width: 516px) {
+        width: 95%;
+        padding: 10px;
+        font-size: 0.7em;
+    }
+
+    @media (max-width: 420px) {
+        width: 70%;
+        padding: 5px;
+        font-size: 0.5em;
+    }
+
+}
+
+.leftColumn,
+.rightColumn {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.1em;
+}
+
+
+
+.arrow {
+    width: auto;
+    height: 5px;
+    background: url(./../../assets/img/arrow.svg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width: 516px) {
+        height: 3px;
+    }
+}
+
+.itemDate {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+
+    @media (max-width: 800px) {
+        font-size: 1.5em;
+
+    }
+    @media (max-width: 516px) {
+        font-size: 1.5em;
+
+    }
+}
+
+.itemName {
+    font-size: 1.5em;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    
+    @media (max-width: 800px) {
+        letter-spacing: 0.15em;
+    }
+    @media (max-width: 516px) {
+        letter-spacing: 0.1em;
+    }
+}
+
+.itemDiameterIcon {
+    position: relative;
+    display: inline-block;
+    margin-right: 5px;
+    width: 0.7em;
+    height: 0.7em;
+    border: 2px solid white;
+    border-radius: 50%;
+
+    @media (max-width: 516px) {
+        border-width: 1px;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: .9em;
+        height: 1px;
+        background-color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+}
+
+
+.itemDiameterValue {
+    display: inline-block;
+}
+
+.itemHazardContainer {
+    display: flex;
+    column-gap: .2em;
+    align-items: flex-end;
+}
+
+.itemHazardIcon {
+    line-height: 0.5;
+    vertical-align: bottom;
+
+    @media (max-width: 516px) {
+        width: 17px;
+        height: 17px;
+    }
+
+    @media (max-width: 420px) {
+        width: 13px;
+        height: 13px;
+    }
+}
+
+.itemHazardValue {
+    vertical-align: bottom;
+    line-height: 0.8;
+}
+
+.itemImage {
+    position: relative;
+    padding: 0;
+}
+
+.itemFooter {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: flex-start;
+
+    // @media (max-width: 516px) {
+    //     padding-left: 1em;
+    // }
+}
+
+.aimSpinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @media (max-width: 800px) {
+        width: 75%;
+        height: 75%;
+        left: 55%;
+        top: 55%;
+    }
+
+    @media (max-width: 516px) {
+        width: 15px;
+        height: 15px;
+        left: 35%;
+        top: 40%;
+    }
+
+    
+}
+
+.itemLink a {
+    color: white;
+    text-decoration: none;
+    transition: all .2s ease-in;
+    &:hover {
+        text-decoration: dotted underline;
+        color: aliceblue;
+    }
+}
+
+.asteroidLargePic {
+    width: 55px;
+    height: 55px;
+
+    @media (max-width: 800px) {
+        width: 50px;
+        height: 50px;
+    }
+
+    @media (max-width: 516px) {
+        width: 32px;
+        height: 32px;
+    }
+
+    @media (max-width: 440px) {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.asteroidSmallPic {
+    width: 35px;
+    height: 35px;
+
+    @media (max-width: 800px) {
+        width: 30px;
+        height: 30px;
+    }
+
+    @media (max-width: 516px) {
+        width: 22px;
+        height: 22px;
+    }
+
+    @media (max-width: 440px) {
+        width: 17px;
+        height: 17px;
+    }
+}

@@ -1,0 +1,33 @@
+.orderButton {
+    font-family: inherit;
+    font-size: 0.9em;
+    font-weight: 700;
+    letter-spacing: .15em;
+    padding: .3em .3em;
+    background-color: #ff7f62;
+    border: 3px solid #ab7261;
+    color: white;
+    border-radius: 10px;
+    touch-action: none;
+    text-transform: uppercase;
+    transition: all .1s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        background-color: chocolate;
+    }
+}
+
+.orderButtonDisabled {
+    font-family: inherit;
+    font-size: 0.9em;
+    font-weight: 700;
+    letter-spacing: .15em;
+    padding: .3em .3em;
+    background-color: #5c5756;
+    border: 3px solid #a49f9d;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all .1s ease-in-out;
+}
