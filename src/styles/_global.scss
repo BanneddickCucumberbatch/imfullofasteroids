@@ -1,18 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;500;600;700&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-
-  html {
-    height: 100%;
-   
-  }
   
   body {
-    min-height: 100dvh;
+    height: 100%;
     font-family: 'Handjet', Arial, Helvetica, sans-serif;
     background: rgb(93, 28, 154);
       background-image: url(./../assets/img/earth.png);
@@ -46,7 +42,7 @@
 
       @media (max-width: 400px) {
         background-size: 500px;
-        background-position: -450px 15svh;
+        background-position: -450px 70%;
       }
   }
   
@@ -55,7 +51,7 @@
   }
 
   .mainContainer {
-    min-height: 100dvh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

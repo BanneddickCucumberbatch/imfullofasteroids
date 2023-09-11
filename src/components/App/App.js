@@ -9,6 +9,7 @@ import { getAllAsteroids } from '../../services/asteroidsService';
 import Loader from '../Loader/Loader';
 
 const App = () => {
+
   const [orders, setOrders] = useState([]);
   const [asteroids, setAsteroids] = useState(null);
   const [disabled, setDisabled] = useState([]);
