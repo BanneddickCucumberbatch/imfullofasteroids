@@ -7,16 +7,10 @@ export const getAllAsteroids = async () => {
     const apiKey = "QFWO0ntza2gMkZ0URcOFjhh7evKVTSOSEhltUBfD"
 
     const res = await fetch(
-      `https://api.nasa.gov/neo/rest/v1/feed?start_date=${startDate}&api_key=${apiKey}`,
-      {
-        method: "GET",
-        mode: "cors",
-        credentials: "same-origin",
-        headers: {
-          "Content-Type": "application/json"
-        }
-      }
+      `https://api.nasa.gov/neo/rest/v1/feed?start_date=${startDate}&api_key=${apiKey}`
+      
     );
+    
     const json = await res.json();
     const result = json.near_earth_objects;
     let total = [];
@@ -50,15 +44,7 @@ export const getAllAsteroids = async () => {
 
   export const getAsteroidApproach = async (id) => {
     const apiKey = "QFWO0ntza2gMkZ0URcOFjhh7evKVTSOSEhltUBfD"
-    const responce = await fetch(`https://api.nasa.gov/neo/rest/v1/neo/${id}?api_key=${apiKey}`,
-    {
-      method: "GET",
-      mode: "cors",
-      credentials: "same-origin",
-      headers: {
-        "Content-Type": "application/json"
-      }
-    });
+    const responce = await fetch(`https://api.nasa.gov/neo/rest/v1/neo/${id}?api_key=${apiKey}`);
     const asteroid = await responce.json()
     return asteroid
   }
