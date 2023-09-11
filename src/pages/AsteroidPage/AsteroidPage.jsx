@@ -49,7 +49,7 @@ const AsteroidPage = () => {
             setAsteroidData(item)
             setApproachesList(item.close_approach_data)
         })
-      },[])
+      },[params.id])
 
     
     return ( 
