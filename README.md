@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# Приложение по заказу и уничтожению астероидов
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## О чем вообще это приложение?
 
-## Available Scripts
+Его создание вдохновлено тестовым заданием от одной компании. С трудоустройством не выгорело, но проект доделал до конца, потому что ну прям интересно стало.
+В данном приложении реализован функционал отслеживания ближайших сближений астероидов с Землей. Данные прилетают из официального [API NASA] (https://api.nasa.gov/).
+Есть список, в котором отображены все сближения, начиная с сегодняшней даты и на неделю вперед. Можно посмотреть название, диаметр, расстояние, на которое астероид сблизится с нашей хрупкой планеткой, и потенциальная опасность.
+По каждому астероиду есть данные о всех его сближениях за время наблюдений: дата, скорость, расстояние и орбита. 
+Также реализован функционал по фану - можно выбрать интересующие астероиды и добавить их в импровизированную корзину, а затем оформить заказ на уничтожение. Почему по фану? Потому что мы все-таки не в фильме "Армагеддон" с Брюсом Уиллисом и человечеству, к счастью, никакие реальные астероиды не угрожают, а если бы и так - было бы забавно иметь возможноть заказать спасение человечества прямо из дома, не правда ли? 
 
-In the project directory, you can run:
+## Демо
+
+Проект также задеплоен на хостинг, можно поиграться по ссылке:
+
+[Готовы чуть-чуть повзрывать?]
+(https://asteroids-attack.netlify.app/)
+
+## Как запустить локально
+
+В терминале, находясь в папке проекта, выполните команду:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Это запустит приложение в режиме разработки.\
+Откройте [http://localhost:3000](http://localhost:3000) для просмотра в браузере.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Страница будет перезагружаться в процессе внесения изменений (сохранения в среде разработки).\
+Также можно будет увидеть ошибки в консоли.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
