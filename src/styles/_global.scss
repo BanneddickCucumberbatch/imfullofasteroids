@@ -7,7 +7,7 @@
   }
 
   html {
-    height: 100svh;
+    height: 100%;
   }
   
   body {
@@ -44,7 +44,7 @@
 
       @media (max-width: 400px) {
         background-size: 500px;
-        background-position: -450px 60%;
+        background-position: -450px 15svh;
       }
   }
   
@@ -53,8 +53,7 @@
   }
 
   .mainContainer {
-    min-height: 100svh;
-    min-height: -webkit-fill-available;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
