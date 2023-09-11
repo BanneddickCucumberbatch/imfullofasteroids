@@ -19,18 +19,18 @@ const Order = ({ orders, onClear, onDelete }) => {
     return isOrdered ? ( 
         <div>
       <h2 className={styles.successMessage}>
-        Ваш заказ принят! Ожидайте вспышек в звездном небе!
+        Ваш заказ принят!<br />Ожидайте вспышек в звездном небе!
       </h2>
-      <Link to="/" >
-        <p className={styles.returnMessage}>← К списку астероидов</p>
-      </Link>
+      
+        <p className={styles.returnMessage}><Link to="/" >← К списку астероидов</Link></p>
+      
     </div>
   ) : !Array.from(orders).length ? (
     <>
       <p className={styles.notification}>Ну уж нет уж, давай-ка заказывай!</p>
-      <Link to="/">
-        <p className={styles.returnMessage}>← К списку астероидов</p>
-      </Link>
+      
+        <p className={styles.returnMessage}><Link to="/">← К списку астероидов</Link></p>
+      
     </>
   ) : (
     <div className={styles.orderContainer}>
@@ -63,9 +63,9 @@ const Order = ({ orders, onClear, onDelete }) => {
           disabled={Array.from(orders).length ? false : true}
         />
       </div>
-      <Link to="/">
-        <p className={styles.returnMessage}>← К списку астероидов</p>
-      </Link>
+      
+        <p className={styles.returnMessage}><Link to="/">← К списку астероидов</Link></p>
+      
     </div>
      );
 }
