@@ -16,7 +16,7 @@
 
 Проект также задеплоен на хостинг, можно поиграться по ссылке:
 
-[Готовы чуть-чуть повзрывать?](https://asteroids-attack.netlify.app/)
+<a href="https://asteroids-attack.netlify.app/" target="_blank">Готовы чуть-чуть повзрывать?</a>
 
 ## Как запустить локально
 
