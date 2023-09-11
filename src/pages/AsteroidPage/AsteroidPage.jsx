@@ -21,7 +21,8 @@ const AsteroidPage = () => {
         "Juptr": "Юпитер",
         "Venus": "Верера",
         "Merc": "Меркурий",
-        "Mars": "Марс"
+        "Mars": "Марс",
+        "Moon": "Луна"
       };
   
     const monthMap = {

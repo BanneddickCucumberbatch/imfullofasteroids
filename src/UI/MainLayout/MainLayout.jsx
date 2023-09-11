@@ -7,7 +7,7 @@ const MainLayout = ({children}) => {
             </header>
             <main>{children}</main>
             <footer className="footer">
-                <p>здесь будет некотороя инфа о КОРПОРАЦИИ</p>
+                <p>Все права и жители планеты защищены</p>
             </footer>
         </div> 
      );

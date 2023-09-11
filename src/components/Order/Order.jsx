@@ -22,14 +22,14 @@ const Order = ({ orders, onClear, onDelete }) => {
         Ваш заказ принят! Ожидайте вспышек в звездном небе!
       </h2>
       <Link to="/" >
-        <span className={styles.returnMessage}>К списку астероидов</span>
+        <p className={styles.returnMessage}>← К списку астероидов</p>
       </Link>
     </div>
   ) : !Array.from(orders).length ? (
     <>
       <p className={styles.notification}>Ну уж нет уж, давай-ка заказывай!</p>
       <Link to="/">
-        <span className={styles.returnMessage}>К списку астероидов</span>
+        <p className={styles.returnMessage}>← К списку астероидов</p>
       </Link>
     </>
   ) : (

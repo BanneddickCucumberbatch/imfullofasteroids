@@ -19,7 +19,7 @@
     color: #ffffff;
     text-decoration: none;
     text-align: center;
-    font-size: 1em;
+    font-size: 22px;
     margin-top: 1em;
     cursor: pointer;
     &:hover {
@@ -28,7 +28,7 @@
     }
 
     @media (max-width: 516px) {
-        font-size: .8em;
+        font-size: 18px;
     }
 }
 

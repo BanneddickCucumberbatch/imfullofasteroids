@@ -15,7 +15,7 @@
       background-size: 45%;
       background-attachment: fixed;
       margin: 0 auto;
-      // padding: 10px 45px; 
+      padding: 10px 45px; 
       color: white;
   
       @media (max-width: 1000px) {
@@ -36,6 +36,11 @@
       @media (max-width: 550px) {
         background-size: 500px;
         background-position: -450px 70%;
+      }
+
+      @media (max-width: 400px) {
+        background-size: 500px;
+        background-position: -450px 200px;
       }
   }
   
