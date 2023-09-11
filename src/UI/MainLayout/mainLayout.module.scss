@@ -55,3 +55,89 @@
     text-align: center;
     margin-top: 3rem;
 }
+
+.arrowTop {
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    cursor: pointer;
+    opacity: 0.7;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    background-image: url(./../../assets/img/arrowUp.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 40%;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        opacity: 1;
+        box-shadow: 1px 1px 3px black;
+    }
+
+    @media (max-width: 1000px) {
+        bottom: 10%;
+    }
+
+    @media (max-width: 800px) {
+        width: 40px;
+        height: 40px;
+    }
+
+    @media (max-width: 560px) {
+        right: 3.5%;
+    }
+    
+    @media (max-width: 516px) {
+        width: 35px;
+        height: 35px;
+        bottom: 7%;
+    }
+    @media (max-width: 400px) {
+        width: 30px;
+        height: 30px;
+    }
+    
+}
+
+.arrowTopHidden {
+    visibility: hidden;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    cursor: pointer;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    background-image: url(./../../assets/img/arrowUp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+
+    @media (max-width: 1000px) {
+        bottom: 10%;
+    }
+
+    @media (max-width: 800px) {
+        width: 40px;
+        height: 40px;
+    }
+
+    @media (max-width: 550px) {
+        right: 3.5%;
+    }
+    
+    @media (max-width: 516px) {
+        width: 35px;
+        height: 35px;
+    }
+    @media (max-width: 400px) {
+        width: 30px;
+        height: 30px;
+    }
+}
